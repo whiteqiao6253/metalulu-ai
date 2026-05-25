@@ -1,0 +1,413 @@
+{
+  "stage1_metrics": {
+    "test_AUC": 0.9686,
+    "test_PR_AUC": 0.914,
+    "test_Brier": 0.042,
+    "train_PR_AUC": 0.9974,
+    "val_PR_AUC": 0.9215
+  },
+  "baseline_comparison": [
+    {
+      "Method": "Seed-Match (TargetScan proxy)",
+      "AUC": 0.7987,
+      "PR-AUC": 0.4506,
+      "Best F1": 0.5286,
+      "Precision": 0.4618,
+      "Recall": 0.618,
+      "Brier": 0.1534
+    },
+    {
+      "Method": "Duplex MFE (RNAhybrid proxy)",
+      "AUC": 0.6555,
+      "PR-AUC": 0.2616,
+      "Best F1": 0.3296,
+      "Precision": 0.2198,
+      "Recall": 0.659,
+      "Brier": 0.1949
+    },
+    {
+      "Method": "Seed+MFE (miRanda proxy)",
+      "AUC": 0.8083,
+      "PR-AUC": 0.4628,
+      "Best F1": 0.535,
+      "Precision": 0.462,
+      "Recall": 0.6353,
+      "Brier": 0.1399
+    },
+    {
+      "Method": "MetaLulu-AI Stage 1",
+      "AUC": 0.9686,
+      "PR-AUC": 0.914,
+      "Best F1": 0.8365,
+      "Precision": 0.8544,
+      "Recall": 0.8194,
+      "Brier": 0.042
+    }
+  ],
+  "stage2_logo": {
+    "weighted_accuracy_tabpfn": 0.675,
+    "weighted_accuracy_xgb": 0.25,
+    "n_genes": 4,
+    "detail": [
+      {
+        "held_out_gene": "CD38",
+        "n_test": 10,
+        "n_pos": 1,
+        "tabpfn_accuracy": 0.9,
+        "tabpfn_correct": 9,
+        "xgb_accuracy": 0.1
+      },
+      {
+        "held_out_gene": "EGLN1",
+        "n_test": 10,
+        "n_pos": 5,
+        "tabpfn_accuracy": 0.5,
+        "tabpfn_correct": 5,
+        "xgb_accuracy": 0.3
+      },
+      {
+        "held_out_gene": "PDE5A",
+        "n_test": 11,
+        "n_pos": 2,
+        "tabpfn_accuracy": 0.8181818181818182,
+        "tabpfn_correct": 9,
+        "xgb_accuracy": 0.18181818181818182
+      },
+      {
+        "held_out_gene": "SOST",
+        "n_test": 9,
+        "n_pos": 5,
+        "tabpfn_accuracy": 0.4444444444444444,
+        "tabpfn_correct": 4,
+        "xgb_accuracy": 0.4444444444444444
+      }
+    ]
+  },
+  "stage2_loso": {
+    "weighted_accuracy_tabpfn": 0.725,
+    "weighted_accuracy_xgb": 0.25,
+    "n_srnas": 40,
+    "detail": [
+      {
+        "held_out_srna": "CAAAUGACUCUCGGCAAUGG",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "CAGCCCUUUGUCGCUUCGAU...",
+        "n_test": 1,
+        "n_pos": 1,
+        "tabpfn_accuracy": 0.0,
+        "tabpfn_correct": 0,
+        "xgb_accuracy": 1.0
+      },
+      {
+        "held_out_srna": "CCUCUCUCACCCCACCA",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 0.0,
+        "tabpfn_correct": 0,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "CCUCUCUCACCCCACCU",
+        "n_test": 1,
+        "n_pos": 1,
+        "tabpfn_accuracy": 0.0,
+        "tabpfn_correct": 0,
+        "xgb_accuracy": 1.0
+      },
+      {
+        "held_out_srna": "CCUCUCUCACCCCACUA",
+        "n_test": 1,
+        "n_pos": 1,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 1.0
+      },
+      {
+        "held_out_srna": "CCUCUCUCACCUCACCA",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 0.0,
+        "tabpfn_correct": 0,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "CCUCUCUCACUCCACCA",
+        "n_test": 1,
+        "n_pos": 1,
+        "tabpfn_accuracy": 0.0,
+        "tabpfn_correct": 0,
+        "xgb_accuracy": 1.0
+      },
+      {
+        "held_out_srna": "CCUCUCUCAUCCCACCA",
+        "n_test": 1,
+        "n_pos": 1,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 1.0
+      },
+      {
+        "held_out_srna": "CGACUUAAAUACGCGACGGG...",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "CGGAAAAAUAGCUCGACGCC...",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "CGGAAAAAUAGCUCGACGCC...",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "CGGAAGAGCGUCGCAUG",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 0.0,
+        "tabpfn_correct": 0,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "CGGAAGAGCGUCGCAUGU",
+        "n_test": 1,
+        "n_pos": 1,
+        "tabpfn_accuracy": 0.0,
+        "tabpfn_correct": 0,
+        "xgb_accuracy": 1.0
+      },
+      {
+        "held_out_srna": "CGGCACUUGCACAUGGGUUA",
+        "n_test": 1,
+        "n_pos": 1,
+        "tabpfn_accuracy": 0.0,
+        "tabpfn_correct": 0,
+        "xgb_accuracy": 1.0
+      },
+      {
+        "held_out_srna": "CUCCCACUGUGGUCGCCA",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "CUGAGAGCUCUUUCUUGAUU...",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "CUGAUGUAUUCAACGAGUCU...",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "CUUGCACAUGGGUUAGUCGA",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "CUUGCACAUGGGUUAGUCGA...",
+        "n_test": 1,
+        "n_pos": 1,
+        "tabpfn_accuracy": 0.0,
+        "tabpfn_correct": 0,
+        "xgb_accuracy": 1.0
+      },
+      {
+        "held_out_srna": "GAAAUUUCAUCGUGAUGGGG...",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "GAGGUGUAGGAUAAGUGGGA...",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "GCGACCCCAGGUCAGGCGGG...",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "GGCAAAAUGGAUCCGUA",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "GGGGAUGUAGCUCAGAUGGU",
+        "n_test": 1,
+        "n_pos": 1,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 1.0
+      },
+      {
+        "held_out_srna": "GGGGAUGUAGCUCAGAUGGU...",
+        "n_test": 1,
+        "n_pos": 1,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "GGGGAUGUAGCUCAGAUGGU...",
+        "n_test": 1,
+        "n_pos": 1,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "GUCGAUAUGUCCGAGUGG",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "GUGCUCUGAAUGUCAAA",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "GUGCUCUGAAUGUCAAAGUG...",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "GUGCUCUGAAUGUCAAAGUG...",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "GUUCAAUAAAGCUGUGGGAA...",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "GUUUGUUUGAUGGUACC",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "GUUUGUUUGAUGGUACCU",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "GUUUGUUUGAUGGUAUCUG",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "UAGCAGCACAUCAUGGUUUG...",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "UCCCAUCAGAACUCCGA",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "UCCGUUGUCGUCCAGCG",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "UCCGUUGUCGUCCAGCGGUU...",
+        "n_test": 1,
+        "n_pos": 1,
+        "tabpfn_accuracy": 0.0,
+        "tabpfn_correct": 0,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "UGUAAACAAUUCCUAGGCAA...",
+        "n_test": 1,
+        "n_pos": 0,
+        "tabpfn_accuracy": 1.0,
+        "tabpfn_correct": 1,
+        "xgb_accuracy": 0.0
+      },
+      {
+        "held_out_srna": "UGUGAUUUCUGCCCAGUGCU...",
+        "n_test": 1,
+        "n_pos": 1,
+        "tabpfn_accuracy": 0.0,
+        "tabpfn_correct": 0,
+        "xgb_accuracy": 1.0
+      }
+    ]
+  }
+}

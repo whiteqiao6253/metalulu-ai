@@ -1,0 +1,5 @@
+Method,AUC,PR-AUC,Best F1,Precision,Recall,Brier
+Seed-Match (TargetScan proxy),0.7987,0.4506,0.5286,0.4618,0.618,0.1534
+Duplex MFE (RNAhybrid proxy),0.6555,0.2616,0.3296,0.2198,0.659,0.1949
+Seed+MFE (miRanda proxy),0.8083,0.4628,0.535,0.462,0.6353,0.1399
+MetaLulu-AI Stage 1,0.9686,0.914,0.8365,0.8544,0.8194,0.042
