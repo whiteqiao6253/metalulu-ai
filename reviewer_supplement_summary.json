@@ -38,9 +38,9 @@
       "Method": "MetaLulu-AI Stage 1",
       "AUC": 0.9686,
       "PR-AUC": 0.914,
-      "Best F1": 0.8365,
-      "Precision": 0.8544,
-      "Recall": 0.8194,
+      "Best F1": 0.8296,
+      "Precision": 0.808,
+      "Recall": 0.8523,
       "Brier": 0.042
     }
   ],
