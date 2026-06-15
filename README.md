@@ -123,7 +123,7 @@ python scripts/repeat_tabpfn_demo_eval.py
 
 If you use this code or data, please cite:
 
-> Qiao L, Li W. MetaLulu-AI: An Interpretable Two-Stage Framework for Plant-Derived Small RNA Cross-Kingdom Target Prediction and Experimental Adaptation. *bioRxiv*, 2025.
+> Qiao L, Li W. MetaLulu-AI: An Interpretable Two-Stage Framework for Plant-Derived Small RNA Cross-Kingdom Target Prediction and Experimental Adaptation.
 
 ---
 
