@@ -141,7 +141,7 @@ python scripts/repeat_tabpfn_demo_eval.py
 
 If you use this code or data, please cite:
 
-> Qiao L, Li W. A Two-Stage Interpretable Framework for Predicting Plant-Derived Small RNA Targets on Human 3′UTRs (MetaLulu-AI framework). 2026. https://github.com/whiteqiao6253/metalulu-ai
+> Le Qiao, Weizhong Li. A Two-Stage Interpretable Framework for Predicting Plant-Derived Small RNA Targets on Human 3′UTRs (MetaLulu-AI framework). 2026. https://github.com/whiteqiao6253/metalulu-ai
 
 ---
 
