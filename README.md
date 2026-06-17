@@ -1,6 +1,8 @@
 # MetaLulu-AI
 
-**MetaLulu-AI: An Interpretable Two-Stage Framework for Plant-Derived Small RNA Cross-Kingdom Target Prediction and Experimental Adaptation**
+**A Two-Stage Interpretable Framework for Predicting Plant-Derived Small RNA Targets on Human 3′UTRs**
+
+*Computational framework: MetaLulu-AI*
 
 Authors: Le Qiao, Weizhong Li
 
@@ -123,7 +125,7 @@ python scripts/repeat_tabpfn_demo_eval.py
 
 If you use this code or data, please cite:
 
-> Qiao L, Li W. MetaLulu-AI: An Interpretable Two-Stage Framework for Plant-Derived Small RNA Cross-Kingdom Target Prediction and Experimental Adaptation.
+> Qiao L, Li W. A Two-Stage Interpretable Framework for Predicting Plant-Derived Small RNA Targets on Human 3′UTRs (MetaLulu-AI framework). 2026. https://github.com/whiteqiao6253/metalulu-ai
 
 ---
 
