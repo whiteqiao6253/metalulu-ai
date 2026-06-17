@@ -17,6 +17,18 @@ MetaLulu-AI is a two-stage machine learning framework for predicting whether pla
 
 ---
 
+## Key Results
+
+**Stage 1 vs. classical target-prediction tools** (held-out test set): the first-layer XGBoost model reaches **AUC 0.969 / PR-AUC 0.914**, substantially above seed-match, duplex-MFE, and seed+MFE proxies of TargetScan, RNAhybrid, and miRanda.
+
+![Stage 1 versus classical-tool proxies](figures/fig_baseline.png)
+
+**Entity-held-out evaluation of Stage 2** (leave-one-gene-out / leave-one-small-RNA-out): the TabPFN adapter clearly beats the raw Stage 1 score baseline, but only matches or marginally exceeds the majority-class baseline (0.675) and remains weak on positive (regulatory) cases. Stage 2 should therefore be read strictly as a **proof of concept** pending a larger experimental dataset.
+
+![Entity-held-out evaluation of Stage 2](figures/fig_entity.png)
+
+---
+
 ## Repository Contents
 
 ```
@@ -29,6 +41,10 @@ MetaLulu-AI is a two-stage machine learning framework for predicting whether pla
 ├── stage2_loso_results.csv           ← Stage 2 leave-one-sRNA-out evaluation
 ├── baseline_comparison_metrics.csv   ← Comparison with TargetScan / RNAhybrid / miRanda proxies
 ├── reviewer_supplement_summary.json  ← Full numeric summary for all reported metrics
+│
+├── figures/
+│   ├── fig_baseline.png              ← Stage 1 vs. classical-tool proxies
+│   └── fig_entity.png                ← LOGO / LOSO entity-held-out evaluation
 │
 └── scripts/
     ├── build_bio_features.py                    ← Feature engineering (41/52-dim)
